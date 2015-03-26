@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="css/memoire.css">
+   <script type="text/javascript" src="js/memoire.js"></script>
+</head>
+
+<body onload="desactivatebuttons();">
+<div class="demort">
+   <header>
+      <div>
+         <img src="images/brain.gif" class="brain"><br/>
+      </div>
+      <h1 id="titre">Improve your memory</h1>
+
+      <nav>
+         <ul>
+      	    <li><a href="javascript: english();"  ><img src="images/us.png" width="20" alt="english"></a></li>
+            <li><a href="javascript: howtoplay();">?</a></li>
+            <li><a href="javascript: credits();"  >Credits</a></li>
+      	    <li><a href="javascript: french();"   ><img src="images/fr.png" width="20" alt="français"></a></li>
+         </ul> 
+      </nav>
+   </header>
+
+   <section>
+      <div class="fondsection">
+         <p>
+            <button id="1" onclick="checkuser('1');">1</button>
+            <button id="2" onclick="checkuser('2');">2</button>
+            <button id="3" onclick="checkuser('3');">3</button>
+         </p>
+         <p>
+            <button id="4" onclick="checkuser('4');">4</button>
+            <button id="5" onclick="checkuser('5');">5</button>
+            <button id="6" onclick="checkuser('6');">6</button>
+         </p>
+         <p>
+            <button id="7" onclick="checkuser('7');">7</button>
+            <button id="8" onclick="checkuser('8');">8</button>
+            <button id="9" onclick="checkuser('9');">9</button>
+         </p>
+         <p>
+            <button id="0" onclick="checkuser('0');">0</button>
+            <button class="buttonplay" id="butplay" onclick="play();">PLAY</button>
+         </p>
+      </div>
+   </section>
+   <div id="gamelevel">Level: 1</div>
+</div>
+</body>
+</html>
